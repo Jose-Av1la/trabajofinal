@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <link rel="stylesheet"  href="paginasjoyeria.css"/>
+               
+                <title>Joyeria El Botin</title>
+                
+            </f:facet>
+        </h:head>
+
+        <h:body>
+           
+            <p:layout fullPage="true" >
+                <div class ="cabecera"> 
+                <p:layoutUnit style="color: background" position="north" size="100" resizable="true" closable="true" collapsible="true">
+                    <h1 align="center">BIENVENIDOS A TU JOYERIA EL DORADO</h1>
+                    <img src="img/Las-joyas-más-valiosas-del-mundo.jpg" height="150" width="150"/>
+                </p:layoutUnit>
+              </div>
+                <p:layoutUnit position="south" size="110" closable="true" collapsible="true">
+                    <div class="comentarios">
+                  <h:form>
+                              
+    <h3>Dejanos tus comentarios</h3>
+  
+       <span class="ui-float-label">
+       <p:inputText id="float-input" value="#{basicView.text}" />
+       <p:outputLabel for="@previous" value="Escribe aqui.." />
+   </span>
+     
+</h:form>
+                        
+          </div> 
+                    <div class="contactos">
+                        
+                        <a>Para mas información: </a>
+                        <img src="img/unnamed.png" height="50" width="50" />
+                        <img src="img/d7c1d07b8d763870d4b59c10603ed092.png" height="50" width="50"/>
+                    </div>
+                </p:layoutUnit>
+                
+                <p:layoutUnit position="west" size="200" header="HOME" collapsible="true">
+                    <p:menu>
+                        <p:submenu label="SERVICIOS">
+                            <p:menuitem value="VER EN LOJA" url="http://localhost:8080/proyecfinal/faces/joyerialoja.xhtml" />
+                            <p:menuitem value="VER EN CATAMAYO" url="http://localhost:8080/proyecfinal/faces/joyeriacatamayo.xhtml" />
+                            <p:menuitem value="VER EN ZAMORA" url="http://localhost:8080/proyecfinal/faces/joyeriazamora.xhtml" />
+                            <p:menuitem value="ADMIN" url="http://localhost:8080/proyecfinal/faces/login.xhtml" />
+                             
+                        </p:submenu>
+                       
+
+                    </p:menu>
+                </p:layoutUnit>
+
+                /////centro de la pagina///////
+                <div class="centrop">
+                <p:layoutUnit position="center">
+                   
+                    <img src="img/images (1).jpg" height="250" width="300"/>
+                    <img src="img/Diferencias-entre-joyas-antiguas-y-vintage.jpg" height="250" width="300"/>
+                    <img src="img/Joyas-para-cenizas-de-un-Ser-Querido2.jpg" height="250" width="300"/>
+                    <img src="img/joya.jpg" height="250" width="300"/>
+                    <img src="img/Las-joyas-más-valiosas-del-mundo.jpg" height="250" width="300"/>
+                    <img src="img/gold-1369453_640.jpg" height="250" width="300"/>
+                    
+                    <img src="img/images.jpg" height="250" width="300"/>
+                </p:layoutUnit>
+               </div>
+            </p:layout>
+      
+        </h:body>
+
+    </f:view>
+</html>
+

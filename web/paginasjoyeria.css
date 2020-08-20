@@ -1,0 +1,32 @@
+.cabecera{
+   color:aqua;
+       
+}
+h1{
+    color: aqua;
+    align-content: center; 
+    
+}
+img.centrop{
+    border: 8px solid #B6D5F9;
+     position: relative;
+  background: darksalmon;
+   overflow: hidden;  
+}
+.centrop:hover img{
+          
+          visibility: visible;
+          opacity: 1;
+          border: 4px solid #B6D5F9;
+         }
+         
+ .comentarios{
+    position:  absolute;
+    right: 0px;
+    left: 1000px;
+    top:0px;  
+ }
+.cabe{
+     background: darksalmon;
+ }
+ 
